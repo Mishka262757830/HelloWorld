@@ -22,30 +22,38 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOV-yi-wG4">
-                                <rect key="frame" x="105.5" y="656" width="203" height="53"/>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOV-yi-wG4">
+                                <rect key="frame" x="98" y="658" width="218" height="51"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="203" id="UTQ-aU-mws"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160.5" id="oCL-em-2hJ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="218" id="jjf-gg-xX3"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Show text">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Show text">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showTextButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="1sc-by-TJh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
+                            <constraint firstItem="wOV-yi-wG4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MPc-hc-R6T"/>
+                            <constraint firstItem="wOV-yi-wG4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VPP-89-GPZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ow4-1a-e63" secondAttribute="trailing" constant="58" id="b0l-pb-iiJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wOV-yi-wG4" secondAttribute="bottom" constant="153" id="d29-FP-UZm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wOV-yi-wG4" secondAttribute="bottom" constant="153" id="bv8-no-tVo"/>
                             <constraint firstItem="Ow4-1a-e63" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="eVg-th-GP2"/>
-                            <constraint firstItem="wOV-yi-wG4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="izG-Em-n5V"/>
                             <constraint firstItem="Ow4-1a-e63" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="155" id="qXS-w7-B9F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wOV-yi-wG4" secondAttribute="trailing" id="wMS-la-EyV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWorldLabel" destination="Ow4-1a-e63" id="XK3-c1-44o"/>
+                        <outlet property="showTextButton" destination="wOV-yi-wG4" id="PVE-ix-4s1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
