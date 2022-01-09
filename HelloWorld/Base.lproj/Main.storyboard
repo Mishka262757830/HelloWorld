@@ -26,6 +26,7 @@
                                 <rect key="frame" x="98" y="658" width="218" height="51"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="218" id="Y8d-z4-LuF"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="218" id="jjf-gg-xX3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
